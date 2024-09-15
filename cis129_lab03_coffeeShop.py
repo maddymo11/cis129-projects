@@ -30,10 +30,22 @@ print('Number of teas bought?')
 print(teaAmount)
 print('***************************************\n\n***************************************')
 print('My Coffee and Muffin Shop Receipt')
-print(coffeeAmount, 'Coffee at $5.00 each: $',int(x * coffeeAmount),'.00')
-print(muffinAmount, 'Muffin at $4.00 each: $',int(y * muffinAmount),'.00')
-print(sconeAmount, 'Scone at $4.00 each: $', int(s * sconeAmount),'.00')
-print(teaAmount, 'Tea at $4.00 each: $', int(z * teaAmount),'.00')
+if coffeeAmount == 1:
+  print(coffeeAmount, 'Coffee at $5.00 each: $',int(x * coffeeAmount),'.00')
+if coffeeAmount > 1:
+  print(coffeeAmount, 'Coffees at $5.00 each: $',int(x * coffeeAmount),'.00')
+if muffinAmount == 1:
+  print(muffinAmount, 'Muffin at $4.00 each: $',int(y * muffinAmount),'.00')
+if muffinAmount > 1:
+  print(muffinAmount, 'Muffins at $4.00 each: $',int(y * muffinAmount),'.00')
+if sconeAmount == 1:
+  print(sconeAmount, 'Scone at $4.00 each: $', int(s * sconeAmount),'.00')
+if sconeAmount > 1:
+  print(sconeAmount, 'Scones at $4.00 each: $', int(s * sconeAmount),'.00')
+if teaAmount == 1:
+  print(teaAmount, 'Tea at $4.00 each: $', int(z * teaAmount),'.00')
+if teaAmount > 1:
+  print(teaAmount, 'Teas at $4.00 each: $', int(z * teaAmount),'.00')
 print('6% tax: $',(subTotal * .06))
 print('---------')
 print('Total: $',total)
