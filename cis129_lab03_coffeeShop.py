@@ -1,3 +1,5 @@
+#x represents coffees
+#y represents muffins
 x = 5
 y = 4
 coffeeAmount = int(input('Number of coffees bought?'))
