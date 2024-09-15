@@ -44,9 +44,9 @@ if sconeAmount == 1:
 if sconeAmount > 1:
   print(sconeAmount, 'Scones at $4.00 each: $', int(s * sconeAmount),'.00')
 if teaAmount == 1:
-  print(teaAmount, 'Tea at $4.00 each: $', int(z * teaAmount),'.00')
+  print(teaAmount, 'Tea at $3.00 each: $', int(z * teaAmount),'.00')
 if teaAmount > 1:
-  print(teaAmount, 'Teas at $4.00 each: $', int(z * teaAmount),'.00')
+  print(teaAmount, 'Teas at $3.00 each: $', int(z * teaAmount),'.00')
 print('6% tax: $',(subTotal * .06))
 print('---------')
 print('Total: $',total)
@@ -54,3 +54,4 @@ print('***************************************')
 print('Thank you for visiting My Coffee and Muffin Shop! :)')
 print('We hope to see you again soon! (っ◔◡◔)っ ♥')
 print('***************************************')
+
