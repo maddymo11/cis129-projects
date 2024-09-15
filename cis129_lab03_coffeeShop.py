@@ -30,6 +30,7 @@ print('Number of teas bought?')
 print(teaAmount)
 print('***************************************\n\n***************************************')
 print('My Coffee and Muffin Shop Receipt')
+#if statements will correctly pluralize item amounts on receipt
 if coffeeAmount == 1:
   print(coffeeAmount, 'Coffee at $5.00 each: $',int(x * coffeeAmount),'.00')
 if coffeeAmount > 1:
@@ -49,4 +50,7 @@ if teaAmount > 1:
 print('6% tax: $',(subTotal * .06))
 print('---------')
 print('Total: $',total)
+print('***************************************')
+print('Thank you for visiting My Coffee and Muffin Shop! :)')
+print('We hope to see you again soon! (っ◔◡◔)っ ♥')
 print('***************************************')
