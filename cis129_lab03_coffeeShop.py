@@ -1,11 +1,16 @@
-#x represents coffees
-#y represents muffins
+#Author: Maddy Simonds
+#this program is an interactive text-based coffee shop simulator
+#x represents cost of coffees
+#y represents cost of muffins
 x = 5
 y = 4
 coffeeAmount = int(input('Number of coffees bought?'))
 muffinAmount = int(input('Number of muffins bought?')) 
 subTotal = int((x * coffeeAmount) + (y * muffinAmount))
+#function adds the total cost of both variables
+#subTotal represents total before tax
 total = subTotal + (subTotal * .06) 
+#function adds subTotal and tax to make the final total
 print('***************************************')
 print('My Coffee and Muffin Shop')
 print('Number of coffees bought?')
