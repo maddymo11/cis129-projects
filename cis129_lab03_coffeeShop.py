@@ -19,8 +19,14 @@ print('Number of muffins bought?')
 print(muffinAmount)
 print('***************************************\n\n***************************************')
 print('My Coffee and Muffin Shop Receipt')
-print(coffeeAmount, 'at $5.00 each: $',int(x * coffeeAmount),'.00')
-print(muffinAmount, 'at $4.00 each: $',int(y * muffinAmount),'.00')
+if coffeeAmount == 1:
+  print(coffeeAmount, 'Coffee at $5.00 each: $',int(x * coffeeAmount),'.00')
+if coffeeAmount > 1:
+  print(coffeeAmount, 'Coffees at $5.00 each: $',int(x * coffeeAmount),'.00')
+if muffinAmount == 1:
+  print(muffinAmount, 'Muffin at $4.00 each: $',int(y * muffinAmount),'.00')
+if muffinAmount > 1:
+  print(muffinAmount, 'Muffins at $4.00 each: $',int(y * muffinAmount),'.00')
 print('6% tax: $',(subTotal * .06))
 print('---------')
 print('Total: $',total)
